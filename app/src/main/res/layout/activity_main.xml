@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kevin.bmi3.MainActivity">
+
+
+    <TextView
+
+        android:id="@+id/txtHeight"
+        style="@style/myStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bmi_height" />
+
+    <EditText
+        android:id="@+id/height"
+        style="@style/myStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        />
+
+    <TextView
+        android:id="@+id/txtWeight"
+        style="@style/myStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bmi_weight" />
+
+    <EditText
+        android:id="@+id/weight"
+        style="@style/myStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/myStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bmi_btn" />
+
+    <Button
+        android:id="@+id/btn_OldNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openOldNotification"
+        android:text="Old_Notification"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <Button
+        android:id="@+id/btn_NewNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openNewNotification"
+        android:text="New_Notification"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openAlarmManager"
+        android:text="AlarmManager"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openPropertyAnimation"
+        android:text="屬性動畫"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+</GridLayout>
